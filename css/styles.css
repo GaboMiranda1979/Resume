@@ -1,0 +1,453 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 5;
+
+}
+html{
+  scroll-behavior: smooth;
+}
+  body {
+  background: #dca456;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFAF7B, #ec6ddf, #5eefe6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.contenedor-header{
+  background: #1e2326;
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  float: right;
+  top: 0;
+  left: 0;
+  z-index: 99;
+
+}
+.contenedor-header header{
+  max-width: 1300px;
+  height: 60px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 5px;
+}
+.contenedor-header header .logo a{
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 45px;
+  color: #8a899c;
+  text-decoration: none;
+}
+.contenedor-header header ul{
+  display: flex;
+  list-style: none;
+}
+.contenedor-header header nav ul li a{
+  text-align: none;
+  color: #fff;
+  margin: 0 10px;
+  padding: 3px;
+  transition: .5s;
+  text-decoration: none;
+}
+.contenedor-header header nav ul li a:hover{
+  color: #066eab;
+}
+.nav-responsive{
+  background-color:#066eab;
+  color:#fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+.inicio{
+  color: #fff7f7;
+  display: flex;
+  align-items: center;
+  
+}
+.inicio .contenido-banner{
+margin-top: 80px;
+  padding: 10px;
+  background-color: rgb(152, 212, 223);
+  max-width: 500px;
+  margin:auto;
+  height: auto;
+  text-align: center;
+  border-radius: 40px;
+}
+.inicio .contenido-banner img{
+  border: 5px solid #0d1f2a;
+  display: block;
+  width: 70%;
+  margin: auto;
+  margin-top: 5px;
+  border-radius: 20%;
+}
+.inicio .contenido-banner h1{
+  margin-top: 10px;
+  font-size: 55px;
+  font-family:  'Montserrat', sans-serif;
+}
+.inicio .contenido-banner h2{
+  font-size: 35px;
+  font-weight: normal;
+}
+.inicio .contenido-banner .redes a{
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  margin: 40px 5px;
+  font-size: 20px;
+  transition: .10s;
+}
+.inicio .contenido-banner .redes a:hover{
+  background-color:  #be3e9a;
+}
+
+.sobremi{
+  background-color: #1e2326;
+  color: #fff;
+  padding: 50px 100px;
+  text-align: center;
+  float: center;
+  display: flex;
+}
+.sobremi .contenido-seccion{
+  height: 350px;
+  max-width: 700px;
+  margin: auto;
+}
+.sobremi h2{
+  font-size: 70px;
+  font-family:  'Montserrat', sans-serif;
+  text-align: center;
+  padding: 10px 0;
+
+}
+.sobremi .contenido-seccion p{
+  font: 50px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+.sobremi .contenido-seccion p span{
+  color:  #066eab;
+  font-weight: bold;
+}
+.sobremi .fila{
+  display: flex;
+}
+  
+  
+   @media screen and (min-width: 52em) {
+    .section {
+        min-width: 52em;
+    }
+  } 
+
+.container {
+  display: flex;
+  width: 70vw;
+  align-items: center;
+  margin-left: 10%;
+}
+.skills h2{
+  color: #fff;
+  font-size: 60px;
+  font-family:  'Montserrat', sans-serif;
+  text-align: center;
+  padding: 10px 0;
+
+}
+
+.panel {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh;
+  border-radius: 50px;
+  color: #000000;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  transition: 0ms;
+  -webkit-transition: all 700ms ease-in;
+}
+
+.panel h3 {
+  font-size: 24px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.panel.active {
+  flex: 5;
+}
+
+.panel.active h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100vw;
+  }
+
+  .panel:nth-of-type(4),
+  .panel:nth-of-type(5) {
+    display: none;
+  }
+}
+.formacionIT h2{
+  font-size: 70px;
+  font-family:  'Montserrat', sans-serif;
+  text-align: center;
+  padding: 10px 0;
+
+}
+.formacion{
+  background-color: #252A2E;
+  color: #fff;
+  padding: 50px 20px;
+}
+.formacion h2{
+  font-size: 70px;
+  font-family:  'Montserrat', sans-serif;
+  text-align: center;
+  padding: 10px 0;
+
+}
+.formacion p{
+  margin: 2%;
+font-size: x-large;
+}
+
+.tarjeta a {
+  color: hsl(150, 4%, 19%);
+  text-decoration: none;
+}
+
+.tarjeta-content {
+  background-color: rgb(186, 172, 204);
+  background: cover;
+  padding: 1.4em;
+}
+
+.tarjeta-content h3 {
+  margin-top:0;
+  margin-bottom:.5em;
+  font-weight:bold;
+}
+
+.tarjeta-content p {
+  font-size: 90%;
+}
+
+figure {
+  margin:0;
+}
+
+img {
+  display: block;
+  border:0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.tarjeta {
+  background: hsl(0, 0%, 100%);
+  margin-bottom: 2em;
+  width: 33%;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.experiencia h2{
+  font-size: 70px;
+  font-family:  'Montserrat', sans-serif;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.experiencia p{
+  margin: 2%;
+  font-size: x-large;
+
+}
+
+.portfolio{
+  background-color: #252A2E;
+  color: #fff;
+  padding: 50px 20px;
+}
+.portfolio .contenido-seccion{
+  max-width: 1100px;
+  margin: auto;
+}
+.portfolio h2{
+  font-size: 48px;
+  font-family:  'Montserrat', sans-serif;
+  text-align: center;
+  padding: 20px 0;
+}
+.portfolio .galeria{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.portfolio .galeria .proyecto{
+  position: relative;
+  max-width: 340px;
+  height: fit-content;
+  margin: 10px;
+  cursor: pointer;
+}
+.portfolio .galeria .proyecto img{
+  width: 100%;
+  display: block;
+  border-radius: 2%;
+}
+.portfolio .galeria .proyecto .overlay{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: linear-gradient(rgba(28, 110, 182, 0.8), rgba(14, 35, 103, 0.8));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 1s;
+  font-size: 18px;
+  letter-spacing: 3px;
+  opacity: 0;
+}
+.portfolio .galeria .proyecto .overlay h3{
+  margin-bottom: 20px;
+  transition: 1s;
+}
+.portfolio .galeria .proyecto .overlay:hover{
+  opacity: 1;
+}
+.portfolio .galeria .proyecto .overlay:hover h3{
+  margin-bottom: 0px;
+}
+
+
+footer {
+  width: 82%;
+  
+   background-color: #000;
+   color: #fff;
+   margin-left: auto;
+   margin-right: auto;
+   
+ }
+ 
+ #datos {
+   font-size: x-large;
+   width: 40%;
+   height: 70%;
+   float: left;
+   padding: 20px;
+   box-sizing: border-box;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content:center;
+   
+   
+ }
+ 
+ #redes{
+   width: 50%;
+   float: right;
+   box-sizing: border-box;
+   padding: 10px;
+   margin-top: 40px;
+   font-size: large;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content:space-around;
+ }
+ .social-icons{
+   padding: 0;
+   margin: 0;
+   list-style: none;
+ }
+ .social-icons li{
+   display: inline-block;
+   margin: 0.15em;
+   position: relative;
+   font-size: 1.2em;
+ 
+ }
+ .social-icons i{
+   color: #fff;
+   position: absolute;
+   top: 21px;
+   left: 21px;
+   transition: all 265ms ease-out;
+ }
+ .social-icons a{
+   display: inline-block;
+ }
+ .social-icons a::before{
+   transform: scale(1);
+   -ms-transform: scale(1);
+   -webkit-transform: scale(1);
+   content: " ";
+   width: 60px;
+   height: 60px;
+   border-radius: 100%;
+   display: block;
+   background: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+   transition: all 265ms ease-out;
+ }
+ .social-icons a:hover::before{
+   transform: scale(0);
+   transition: all 265ms ease-in;
+ }
+ .social-icons a:hover i{
+ transform: scale(2);
+ -ms-transform: scale(2);
+   -webkit-transform: scale(2);
+   color: #fff;
+   background: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+   background-clip: unset;
+   -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ transition: all 265ms ease-in;
+ }
+ 
+ @media screen and (min-width: 52em) {
+   .footer {
+       min-width: 52em;
+   }
+ }
+ 
+ .footer {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   flex: 1 0 auto;
+   text-align: center;
+ }
+ 
