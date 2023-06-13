@@ -6,7 +6,7 @@
 
 }
 html{
-  scroll-behavior: smooth;
+  scroll-behavior:smooth;
 }
   body {
   background: #dca456;  /* fallback for old browsers */
@@ -18,16 +18,13 @@ background: linear-gradient(to right, #FFAF7B, #ec6ddf, #5eefe6); /* W3C, IE 10+
   background: #1e2326;
   position: fixed;
   width: 100%;
-  height: 60px;
   float: right;
   top: 0;
   left: 0;
   z-index: 99;
-
 }
 .contenedor-header header{
   max-width: 1300px;
-  height: 60px;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -36,8 +33,8 @@ background: linear-gradient(to right, #FFAF7B, #ec6ddf, #5eefe6); /* W3C, IE 10+
 }
 .contenedor-header header .logo a{
   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 45px;
-  color: #8a899c;
+  font-size: 40px;
+  color: #8c89bf;
   text-decoration: none;
 }
 .contenedor-header header ul{
@@ -47,10 +44,11 @@ background: linear-gradient(to right, #FFAF7B, #ec6ddf, #5eefe6); /* W3C, IE 10+
 .contenedor-header header nav ul li a{
   text-align: none;
   color: #fff;
-  margin: 0 10px;
+  margin: 0 5px;
   padding: 3px;
   transition: .5s;
   text-decoration: none;
+  ;
 }
 .contenedor-header header nav ul li a:hover{
   color: #066eab;
@@ -58,20 +56,25 @@ background: linear-gradient(to right, #FFAF7B, #ec6ddf, #5eefe6); /* W3C, IE 10+
 .nav-responsive{
   background-color:#066eab;
   color:#fff;
-  padding: 5px 10px;
+  padding: 5px 5px;
   border-radius: 5px;
   cursor: pointer;
   display: none;
 }
-
+@media screen and (min-width: 52em) {
+  .contenedor-header {
+      min-width: 52em;
+  }
+}
+.contenedor-inicio{
+  margin: auto;
+}
 .inicio{
   color: #fff7f7;
   display: flex;
-  align-items: center;
-  
+  align-items: center;    
 }
 .inicio .contenido-banner{
-margin-top: 80px;
   padding: 10px;
   background-color: rgb(152, 212, 223);
   max-width: 500px;
@@ -79,6 +82,7 @@ margin-top: 80px;
   height: auto;
   text-align: center;
   border-radius: 40px;
+  margin-top: 70px;
 }
 .inicio .contenido-banner img{
   border: 5px solid #0d1f2a;
@@ -113,17 +117,21 @@ margin-top: 80px;
 .inicio .contenido-banner .redes a:hover{
   background-color:  #be3e9a;
 }
-
+@media screen and (min-width: 52em) {
+  .inicio {
+      min-width: 52em;
+  }
+}
 .sobremi{
   background-color: #1e2326;
   color: #fff;
-  padding: 50px 100px;
+  padding: 50px 50px;
   text-align: center;
   float: center;
   display: flex;
 }
 .sobremi .contenido-seccion{
-  height: 350px;
+  
   max-width: 700px;
   margin: auto;
 }
@@ -147,7 +155,11 @@ margin-top: 80px;
   display: flex;
 }
   
-  
+@media screen and (min-width: 52em) {
+  .sobremi {
+      min-width: 52em;
+  }
+}
    @media screen and (min-width: 52em) {
     .section {
         min-width: 52em;
@@ -219,6 +231,11 @@ margin-top: 80px;
   padding: 10px 0;
 
 }
+@media screen and (min-width: 52em) {
+  .formacionIT {
+      min-width: 52em;
+  }
+}
 .formacion{
   background-color: #252A2E;
   color: #fff;
@@ -235,7 +252,11 @@ margin-top: 80px;
   margin: 2%;
 font-size: x-large;
 }
-
+@media screen and (min-width: 52em) {
+  .formacion {
+      min-width: 52em;
+  }
+}
 .tarjeta a {
   color: hsl(150, 4%, 19%);
   text-decoration: none;
@@ -268,8 +289,6 @@ img {
   height: 100%;
 }
 
-
-
 .tarjeta {
   background: hsl(0, 0%, 100%);
   margin-bottom: 2em;
@@ -280,6 +299,7 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 .experiencia h2{
   font-size: 70px;
   font-family:  'Montserrat', sans-serif;
@@ -292,7 +312,11 @@ img {
   font-size: x-large;
 
 }
-
+@media screen and (min-width: 52em) {
+  .experiencia {
+      min-width: 52em;
+  }
+}
 .portfolio{
   background-color: #252A2E;
   color: #fff;
@@ -350,7 +374,11 @@ img {
 .portfolio .galeria .proyecto .overlay:hover h3{
   margin-bottom: 0px;
 }
-
+@media screen and (min-width: 52em) {
+  .portfolio {
+      min-width: 52em;
+  }
+}
 
 footer {
   width: 82%;
